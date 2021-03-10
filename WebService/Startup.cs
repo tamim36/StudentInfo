@@ -12,6 +12,8 @@ using System.Linq;
 using System.Threading.Tasks;
 using Repositories;
 using Services.StudentService;
+using AutoMapper;
+using Services.DropdownService;
 
 namespace WebService
 {
@@ -32,7 +34,9 @@ namespace WebService
                     Configuration.GetConnectionString("DefaultConnection"),
                     x => x.MigrationsAssembly("Migrations")));
             services.AddControllers();
+            services.AddAutoMapper(typeof(Startup));
             services.AddScoped<IStudentService, StudentService>();
+            services.AddScoped<IDropdownService, DropdownService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
