@@ -70,14 +70,14 @@ namespace Services.DropdownService
             }
             return response;
         }
-        /*
-        public async Task<ServiceResponse<List<GetBoardDto>>> BoardDropdown()
+
+        public async Task<ServiceResponse<List<GetHscEqDto>>> HscEqDropdown()
         {
-            ServiceResponse<List<GetBoardDto>> response = new ServiceResponse<List<GetBoardDto>>();
+            ServiceResponse<List<GetHscEqDto>> response = new ServiceResponse<List<GetHscEqDto>>();
             try
             {
-                List<Board> boards = await dataContext.Boards.ToListAsync();
-                response.Data = (boards.Select(p => mapper.Map<GetBoardDto>(p))).ToList();
+                List<ExamType> exams = await dataContext.ExamTypes.Where(c => c.MainExamNames == "HSC").ToListAsync();
+                response.Data = (exams.Select(p => mapper.Map<GetHscEqDto>(p))).ToList();
             }
             catch (Exception ex)
             {
@@ -87,13 +87,13 @@ namespace Services.DropdownService
             return response;
         }
 
-        public async Task<ServiceResponse<List<GetBoardDto>>> BoardDropdown()
+        public async Task<ServiceResponse<List<GetSscEqDto>>> SscEqDropdown()
         {
-            ServiceResponse<List<GetBoardDto>> response = new ServiceResponse<List<GetBoardDto>>();
+            ServiceResponse<List<GetSscEqDto>> response = new ServiceResponse<List<GetSscEqDto>>();
             try
             {
-                List<Board> boards = await dataContext.Boards.ToListAsync();
-                response.Data = (boards.Select(p => mapper.Map<GetBoardDto>(p))).ToList();
+                List<ExamType> exams = await dataContext.ExamTypes.Where(c => c.MainExamNames == "SSC").ToListAsync();
+                response.Data = (exams.Select(p => mapper.Map<GetSscEqDto>(p))).ToList();
             }
             catch (Exception ex)
             {
@@ -101,6 +101,6 @@ namespace Services.DropdownService
                 response.Message = ex.Message;
             }
             return response;
-        }*/
+        }
     }
 }

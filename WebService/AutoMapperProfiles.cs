@@ -13,6 +13,10 @@ namespace WebService
         public AutoMapperProfiles()
         {
             CreateMap<Programs, GetProgramsDto>();
+            CreateMap<Board, GetBoardDto>();
+            CreateMap<ExamType, GetHscEqDto>();
+            CreateMap<ExamType, GetSscEqDto>();
+            CreateMap<PassingYear, GetPassingYearDto>();
         }
     }
 }
