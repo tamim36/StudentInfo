@@ -11,6 +11,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Repositories;
+using Services.StudentService;
 
 namespace WebService
 {
@@ -31,6 +32,7 @@ namespace WebService
                     Configuration.GetConnectionString("DefaultConnection"),
                     x => x.MigrationsAssembly("Migrations")));
             services.AddControllers();
+            services.AddScoped<IStudentService, StudentService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

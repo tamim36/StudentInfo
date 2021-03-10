@@ -8,10 +8,8 @@ namespace Models
     public class ExamType
     {
         public int Id { get; set; }
-        public HscEquivalent HscEquivalent { get; set; }
-        public SscEquivalent SscEquivalent { get; set; }
-        public AcademicInfo AcademicInfo { get; set; }
-        public int AcademicInfoID { get; set; }
+        public string MainExamNames { get; set; } // HSC SSC JSC PSC
+        public string SubExamNames { get; set; } // Dakhli Diploma Equivalent
 
     }
 }

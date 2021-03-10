@@ -8,5 +8,6 @@ namespace Models
     {
         public int Id { get; set; }
         public string BoardName { get; set; }
+        public List<AcademicInfo> AcademicInfos { get; set; }
     }
 }

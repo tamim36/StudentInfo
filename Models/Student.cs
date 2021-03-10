@@ -8,7 +8,7 @@ namespace Models
     {
         public int id { get; set; }
         public string FullName { get; set; }
-        public Programs Programs { get; set; }
+        public Programs Programs { get; set; } // one to many
         public int ProgramsId { get; set; }
         public string ImagePath { get; set; }
         public string FatherName { get; set; }
@@ -19,7 +19,7 @@ namespace Models
         public string NationalId { get; set; }
         public string Email { get; set; }
         public string PresentAddress { get; set; }
-        public AcademicInfo AcademicInfo { get; set; }
+        public List<AcademicInfo> AcademicInfo { get; set; } // one to many
 
     }
 }

@@ -8,5 +8,6 @@ namespace Models
     {
         public int Id { get; set; }
         public int Year { get; set; }
+        public List<AcademicInfo> AcademicInfos { get; set; }
     }
 }

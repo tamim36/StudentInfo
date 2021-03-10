@@ -8,6 +8,6 @@ namespace Models
     {
         public int Id { get; set; }
         public string ProgramName { get; set; }
-        public Student Student { get; set; }
+        public List<Student> Students { get; set; }
     }
 }
