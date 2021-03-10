@@ -1,0 +1,12 @@
+D:\WorkStation\MyPractice\StudentManagement\Dtos\bin\Debug\netcoreapp3.1\Dtos.deps.json
+D:\WorkStation\MyPractice\StudentManagement\Dtos\bin\Debug\netcoreapp3.1\Dtos.dll
+D:\WorkStation\MyPractice\StudentManagement\Dtos\bin\Debug\netcoreapp3.1\Dtos.pdb
+D:\WorkStation\MyPractice\StudentManagement\Dtos\bin\Debug\netcoreapp3.1\Models.dll
+D:\WorkStation\MyPractice\StudentManagement\Dtos\bin\Debug\netcoreapp3.1\Models.pdb
+D:\WorkStation\MyPractice\StudentManagement\Dtos\obj\Debug\netcoreapp3.1\Dtos.csprojAssemblyReference.cache
+D:\WorkStation\MyPractice\StudentManagement\Dtos\obj\Debug\netcoreapp3.1\Dtos.AssemblyInfoInputs.cache
+D:\WorkStation\MyPractice\StudentManagement\Dtos\obj\Debug\netcoreapp3.1\Dtos.AssemblyInfo.cs
+D:\WorkStation\MyPractice\StudentManagement\Dtos\obj\Debug\netcoreapp3.1\Dtos.csproj.CoreCompileInputs.cache
+D:\WorkStation\MyPractice\StudentManagement\Dtos\obj\Debug\netcoreapp3.1\Dtos.csproj.CopyComplete
+D:\WorkStation\MyPractice\StudentManagement\Dtos\obj\Debug\netcoreapp3.1\Dtos.dll
+D:\WorkStation\MyPractice\StudentManagement\Dtos\obj\Debug\netcoreapp3.1\Dtos.pdb
