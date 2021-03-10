@@ -1,9 +1,0 @@
-D:\WorkStation\MyPractice\StudentManagement\Models\bin\Debug\netcoreapp3.1\Models.deps.json
-D:\WorkStation\MyPractice\StudentManagement\Models\bin\Debug\netcoreapp3.1\Models.dll
-D:\WorkStation\MyPractice\StudentManagement\Models\bin\Debug\netcoreapp3.1\Models.pdb
-D:\WorkStation\MyPractice\StudentManagement\Models\obj\Debug\netcoreapp3.1\Models.csprojAssemblyReference.cache
-D:\WorkStation\MyPractice\StudentManagement\Models\obj\Debug\netcoreapp3.1\Models.AssemblyInfoInputs.cache
-D:\WorkStation\MyPractice\StudentManagement\Models\obj\Debug\netcoreapp3.1\Models.AssemblyInfo.cs
-D:\WorkStation\MyPractice\StudentManagement\Models\obj\Debug\netcoreapp3.1\Models.csproj.CoreCompileInputs.cache
-D:\WorkStation\MyPractice\StudentManagement\Models\obj\Debug\netcoreapp3.1\Models.dll
-D:\WorkStation\MyPractice\StudentManagement\Models\obj\Debug\netcoreapp3.1\Models.pdb
