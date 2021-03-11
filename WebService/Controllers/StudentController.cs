@@ -23,7 +23,7 @@ namespace WebService.Controllers
         }
         // POST api/<StudentController>
         [HttpPost]
-        public async Task<IActionResult> Post([FromBody] AddStudentDto studentDto)
+        public async Task<IActionResult> Post([FromForm] AddStudentDto studentDto)
         {
             ServiceResponse<int> response = await studentService.StudentInfo(studentDto);
             if (response.Success == false)

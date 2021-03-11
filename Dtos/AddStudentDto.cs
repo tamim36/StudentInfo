@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Http;
+using Models;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -8,9 +10,7 @@ namespace Dtos
     {
         public string FullName { get; set; }
         public int ProgramsId { get; set; }
-        public int ExamTypeId { get; set; }
-        public int BoardId { get; set; }
-        public int PassingYearId { get; set; }
-        public float GPA { get; set; }
+        public IFormFile File { get; set; }
+        public string AcademicInfo { get; set; }
     }
 }

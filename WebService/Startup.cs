@@ -14,6 +14,7 @@ using Repositories;
 using Services.StudentService;
 using AutoMapper;
 using Services.DropdownService;
+using Services.FileService;
 
 namespace WebService
 {
@@ -34,7 +35,18 @@ namespace WebService
                     Configuration.GetConnectionString("DefaultConnection"),
                     x => x.MigrationsAssembly("Migrations")));
             services.AddControllers();
+            services.AddCors(options =>
+            {
+                options.AddPolicy(
+                   name: "AllowOrigin",
+                   builder => {
+                       builder.AllowAnyOrigin()
+                      .AllowAnyMethod()
+                      .AllowAnyHeader();
+                   });
+            });
             services.AddAutoMapper(typeof(Startup));
+            services.AddScoped<IFileService, FileService>();
             services.AddScoped<IStudentService, StudentService>();
             services.AddScoped<IDropdownService, DropdownService>();
         }
@@ -48,6 +60,9 @@ namespace WebService
             }
 
             app.UseRouting();
+
+            app.UseCors("AllowOrigin");
+            
 
             app.UseAuthorization();
 
