@@ -376,3 +376,4 @@ msbuild.wrn
 
 # Visual Studio 2015
 .vs/
+FileStorage/
